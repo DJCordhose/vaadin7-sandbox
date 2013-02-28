@@ -8,7 +8,7 @@ import com.vaadin.annotations.*;
 import com.vaadin.ui.AbstractJavaScriptComponent;
 
 @JavaScript({
-		"https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
+		"https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js",
 		"jquery.flot.js", "flot_connector.js" })
 public class Flot extends AbstractJavaScriptComponent {
 	public void addSeries(double... points) {

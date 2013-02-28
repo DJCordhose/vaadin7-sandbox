@@ -11,7 +11,7 @@ import com.vaadin.ui.VerticalLayout;
 
 import eu.zeigermann.vaadin.demo.component.server.MyComponent;
 
-@PreserveOnRefresh
+//@PreserveOnRefresh
 public class ComponentUI extends UI {
 	@Override
 	public void init(VaadinRequest request) {

@@ -9,6 +9,7 @@ import com.vaadin.ui.VerticalLayout;
 
 /**
  * Main UI class
+ * https://vaadin.com/wiki/-/wiki/Main/Vaadin%207
  */
 @SuppressWarnings("serial")
 public class SandboxUI extends UI {

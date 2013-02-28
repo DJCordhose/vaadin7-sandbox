@@ -1,0 +1,1 @@
+java -cp '/Users/olli/.ivy2/cache/com.vaadin/vaadin-themes/jars/vaadin-themes-7.0.0.jar:/Users/olli/.ivy2/cache/com.vaadin/vaadin-theme-compiler/jars/vaadin-theme-compiler-7.0.0.jar:/Users/olli/.ivy2/cache/com.vaadin/vaadin-shared-deps/jars/vaadin-shared-deps-1.0.2.jar:/Users/olli/.ivy2/cache/org.w3c.css/sac/jars/sac-1.3.jar' com.vaadin.sass.SassCompiler styles.scss styles.css

@@ -1,4 +1,5 @@
-window.de_zeigermann_vaadin_js_Flot = function() {
+// init function named after the components complete path
+window.eu_zeigermann_vaadin_demo_js_Flot = function() {
     var element = $(this.getElement());
     
     this.onStateChange = function() {

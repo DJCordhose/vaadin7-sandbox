@@ -2,6 +2,7 @@ package eu.zeigermann.vaadin.demo.forms.masterdetail;
 
 import java.util.List;
 
+import com.vaadin.annotations.Theme;
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.data.fieldgroup.FieldGroup;
@@ -23,6 +24,8 @@ import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
+@Theme("olli")
+// braucht den apache validator und die ganzen anderen wirren jars in web-inf/lib
 public class AddressFormsUI extends UI {
 
 	private GridLayout form;
@@ -46,7 +49,7 @@ public class AddressFormsUI extends UI {
 
 		setContent(mainLayout);
 
-		// to make sure fields are initially bound (otherwise we get exeptions
+		// to make sure fields are initially bound (otherwise we get exceptions
 		// when we directly add a new person)
 		editPerson(null);
 	}
@@ -121,6 +124,7 @@ public class AddressFormsUI extends UI {
 				editPerson(null);
 			}
 		});
+		add.setPrimaryStyleName("olli-knopf");
 		Button delete = new Button("Delete", new ClickListener() {
 			public void buttonClick(ClickEvent event) {
 				backend.deletePerson((Person) table.getValue());

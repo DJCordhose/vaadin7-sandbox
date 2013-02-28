@@ -1,0 +1,20 @@
+@import "../reindeer/reindeer.scss";
+
+@mixin olli {
+	@include reindeer;
+	   
+	$color : yellow;
+	$buttonColor : red;
+
+	.v-label-caption, .v-captiontext {
+		color:  $color;
+	}
+	
+	@include base-button($primaryStyleName: olli-knopf);
+	.olli-knopf {
+		color:  $buttonColor;
+	
+	}
+}
+
+
